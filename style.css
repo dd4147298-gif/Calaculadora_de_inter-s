@@ -16,7 +16,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: var(--dark-blue);
-    background-image: url('background.jpg');
+    background-image: url('Imagen de WhatsApp 2025-08-18 a las 22.03.29_a5f03930.jpg'); /* Actualizado para coincidir con la imagen */
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -82,7 +82,7 @@ body {
 
 .site-header h1 {
     margin: 0;
-    font-size: 64px; /* Aumentado de 48px */
+    font-size: 64px;
     font-weight: 700;
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
@@ -98,7 +98,7 @@ body {
 .highlight {
     color: var(--yellow);
     font-weight: bold;
-    font-size: 24px; /* Aumentado de 18px */
+    font-size: 24px;
 }
 
 .container {
@@ -647,5 +647,27 @@ button:hover {
     .to-top {
         bottom: 15px;
         left: 15px;
+    }
+}
+
+/* Media query para pantallas de 400px o menos */
+@media (max-width: 400px) {
+    .site-header h1 {
+        font-size: 2.2em; /* Reducido para evitar que el texto se corte */
+    }
+    .highlight {
+        font-size: 1em; /* Reducido para que se ajuste mejor en una sola línea */
+    }
+    .site-header p {
+        font-size: 0.9em; /* Ajuste para el resto de los párrafos */
+    }
+    
+    /* Ajustar tamaño de fuente en los resultados para evitar que se salgan de la caja */
+    .resultados-panel .resultado-pequeno p {
+        font-size: 24px;
+    }
+    
+    .resultados-panel .resultado-grande p {
+        font-size: 36px;
     }
 }
